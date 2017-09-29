@@ -11,6 +11,7 @@ print('Loading function')
 
 # parsing the event to get the networkId, appId and phoneConfig
 # retrieve the S3 file pointer and return a presigned URL, return a response
+# REMEMBER: this lambda needs to have a role that can access the S3 bucket
 def lambda_handler(event, context):
     phoneConfig = event['queryStringParameters']['phoneConfig']
     netId = event['queryStringParameters']['netId']
