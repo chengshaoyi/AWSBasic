@@ -17,14 +17,12 @@ def lambda_handler(event, context):
     print(filename)
     s3_client = boto3.client('s3')
 
-    BUCKET_NAME = 'shaoyi-cheng-test'
+    BUCKET_NAME = 'shaoyi-s3-log'
     FILE_NAME = cur_dt + ".info";
 
     data = open(filename, 'r')
     s3_client.put_object(ACL='private', Key=FILE_NAME, Body=data, Bucket=BUCKET_NAME)
-    #put a identification in the dynamoDB identifying the file we have uploaded
-
-    #invoke 
+    
     
     
 
