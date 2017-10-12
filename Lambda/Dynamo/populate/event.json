@@ -1,0 +1,12 @@
+{
+  "entry1":{"appID":"public1",
+      "alanNet": 
+        {"default": "dummyTest",
+         "SD820": "dummyTest"}
+     },
+  "entry2":{"appID":"public2",
+      "alanNet": 
+        {"default": "dummyTest2",
+         "SD820": "dummyTest2"}
+     }
+}

@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     # from these, find presign a url from S3
     
     #allStr = phoneConfig+" "+netId+" "+appId+"\n"
-
+    print(phoneConfig+" "+netId+" "+appId+"\n")
     BUCKET_NAME = 'shaoyi-s3-log'
     FILE_NAME = "20170928.info";
     s3_client = boto3.client('s3')

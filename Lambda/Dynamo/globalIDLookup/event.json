@@ -2,7 +2,7 @@
   "queryStringParameters": 
     {
       "phoneConfig": "FAKEPHONE",
-      "netId": "FAKENET",
+      "netId": "FAKENET1",
       "appId": "FAKEAPP"
     }
 }
